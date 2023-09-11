@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<body>
+    <form action="conformation.html">
+        <h1>My Informations</h1>
+        <div>
+            <p>How did you hear about us?</p>
+            <select name="reference" id="reference" required >
+                <option value="none">None</option>
+                <option value="socialmedia">Socialmedia</option>
+                <option value="career site">Career site</option>
+                <option value="jobportal">Job portals</option>
+                <option value="referal">Employee referal</option>
+
+            </select>
+            
+        </div>
+        <div>
+            <p>Have you previously been employed at kitez tech?</p>
+            <input type="radio" name="previousemployee" id="ya" value="yes" required>
+            <label for="ya">Yes</label>
+            <input type="radio" name="previousemployee" id="na" value="no" required>
+            <label for="na">No</label>
+        </div>
+        <br /> 
+        <hr />
+        <div>
+            <h2>Legal Name</h2>
+            <div>
+                <label for="firstname"> Firstname:</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <br />
+            <div>
+                <label for="lastname"> Lastname:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <br />
+            <div>
+                <label for="dob">Date of birth</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+        </div>
+        <br />
+        <hr />
+        <div>
+            <h2>Address</h2>
+            <div>
+                <label for="address1">Address 1</label><br />
+                <input type="text" name="address1" id="address1" size="40" required>
+            </div>
+            <br />
+            <div>
+                <label for="address2">Address 2</label><br />
+                <input type="text" name="address2" id="address2" size="40">
+            </div>
+            <br/>
+            <div>
+                <label for="city">City</label><br />
+                <input type="text" name="city" id="city"  required>
+            </div>
+            <br />
+            <div>
+                <label for="country">Country</label><br />
+                <input type="text" id="country" name="country" value="India">
+            </div>
+            <br />
+            <div>
+                <label for="postcode">Postalcode</label><br />
+                <input type="number" name="postalcode" id="postcode" required>
+            </div>
+        </div>
+        <br />
+        <hr />
+        <div>
+            <div>
+                <h2>Email Address</h2>
+                <input type="email" placeholder="Enter your email">
+            </div>
+            <br />
+            <div>
+                <label for="contact">Contact details</label><br />
+                <input type="tel" id="contact" name="contact">
+            </div>
+            <br />
+            <div>
+                <label for="password">Password</label><br />
+                <input type="password" id="password" name="password" minlength="8" placeholder="min 8 characters">
+            </div>
+            
+        </div>
+        <br />
+        <div>
+            <label for="about">About</label><br />
+            <textarea name="about" id="about" cols="40" rows="6">Enter your additional details</textarea>
+        </div>
+        <br />
+        <div>
+            <input type="checkbox" name="consent" id="consent" required>
+            <label for="consent"> I agree with the terrms and condition</label>
+        </div>
+        <br />
+        <button type="submit">Submit</button>
+
+
+    </form>
+</body>
+</html>
